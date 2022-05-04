@@ -1,0 +1,80 @@
+[
+    {
+      "name": "Pramod",
+      "age": 44,
+      "location": "Pune",
+      "Role": "Marketing"
+    },
+    {
+      "name": "Amit",
+      "age": 38,
+      "location": "Pune",
+      "Role": "Marketing"
+    },
+    {
+      "name": "Priyesh",
+      "age": 32,
+      "location": "Pune",
+      "Role": "Marketing"
+    },
+    {
+      "name": "Hitesh",
+      "age": 21,
+      "location": "Pune",
+      "Role": "Marketing"
+    },
+    {
+      "name": "Jassi",
+      "age": 32,
+      "location": "Pune",
+      "Role": "Marketing"
+    },
+    {
+      "name": "Datta",
+      "age": 28,
+      "location": "Pune",
+      "Role": "Marketing"
+    },
+    {
+      "name": "Vaibhav",
+      "age": 48,
+      "location": "Pune",
+      "Role": "Marketing"
+    },
+    {
+      "name": "Kunal",
+      "age": 44,
+      "location": "Pune",
+      "Role": "Sales"
+    },
+    {
+      "name": "Pranali",
+      "age": 28,
+      "location": "Pune",
+      "Role": "Sales"
+    },
+    {
+      "name": "Shrikant",
+      "age": 22,
+      "location": "Pune",
+      "Role": "Sales"
+    },
+    {
+      "name": "Eric",
+      "age": 29,
+      "location": "Pune",
+      "Role": "Engineer"
+    },
+    {
+      "name": "Dinesh",
+      "age": 39,
+      "location": "Pune",
+      "Role": "Engineer"
+    },
+    {
+      "name": "Smita",
+      "age": 31,
+      "location": "Pune",
+      "Role": "Engineer"
+    }
+]

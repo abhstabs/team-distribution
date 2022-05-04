@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Pramod",
+        "age": 44,
+        "location": "Pune",
+        "Role": "Marketing"
+    },
+    {
+        "name": "Amit",
+        "age": 38,
+        "location": "Delhi",
+        "Role": "Engineer"
+    }
+]
+

@@ -1,0 +1,36 @@
+[{
+    "name": "Priyesh",
+    "age": 40,
+    "location": "Delhi",
+    "Role": "Marketing"
+  },
+  {
+    "name": "Hitesh",
+    "age": 21,
+    "location": "Mumbai",
+    "Role": "Sales"
+  },
+  {
+    "name": "Datta",
+    "age": 28,
+    "location": "Banglore",
+    "Role": "Engineer"
+  },
+  {
+    "name": "Vaibhav",
+    "age": 18,
+    "location": "Pune",
+    "Role": "Sales"
+  },
+  {
+    "name": "Pranali",
+    "age": 28,
+    "location": "Chennai",
+    "Role": "Marketing"
+  },
+  {
+    "name": "Shrikant",
+    "age": 22,
+    "location": "Ahmedabad",
+    "Role": "Engineer"
+  }]
