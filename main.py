@@ -3,13 +3,12 @@ import sys
 from functools import partial
 from typing import List, Tuple
 
-from helpers import form_teams_with_experience, form_teams_with_limiting_skill
+from helpers import form_teams
 from models import (Member, Roles, SkillMembers, Team, get_members_by_age,
                     get_members_for_city)
 
 EXPERIENCE = "Experience"
 
-# data_set = json.loads(open("data.json", "r").read())
 
 def create_members_from_dataset(data_set: List) -> List[Member]:
     '''
@@ -55,38 +54,7 @@ def form_teams_for_location(members: List[Member]) -> List[Team]:
         elder, younger = function(members)
         skill_members.append(SkillMembers(role = function.args[0], elder_members = elder, younger_members = younger))
     
-    limiting_skill = find_the_limiting_skill(skill_members)
-    if limiting_skill == EXPERIENCE:
-        # if the limiting skill is experience, then form teams with experienced members on priority
-        return form_teams_with_experience(skill_members)
-    
-    # if the limiting skill is not experience, then form teams with members with the limiting skill on priority
-    return form_teams_with_limiting_skill(skill_members, limiting_skill)
-
-        
-def find_the_limiting_skill(skill_members: List[SkillMembers]) -> str:
-    '''
-        Find the limiting skill from the list of SkillMembers (Members distributed on their skills and experience)
-        @param skill_members: List of SkillMembers
-        @return: The limiting skill
-    '''
-    skill_count = {role : 0 for role in Roles}
-    skill_count[EXPERIENCE] = 0
-    for skill_member in skill_members:
-        skill_count[skill_member.role] += skill_member.total_members
-        skill_count[EXPERIENCE] += len(skill_member.elder_members)
-
-    limiting_skill_count = 100_000_000_000 #initialize with a large number
-    limiting_skill = None
-
-    # finding the limiting skill
-    for skill in skill_count: 
-      if skill_count[skill] < limiting_skill_count:
-        limiting_skill_count = skill_count[skill]
-        limiting_skill = skill
-    return limiting_skill
-
-
+    return form_teams(skill_members)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
